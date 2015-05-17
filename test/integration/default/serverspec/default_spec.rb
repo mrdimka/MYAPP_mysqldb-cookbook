@@ -6,8 +6,8 @@ describe 'MyApp_mysqldb::default' do
   # http://serverspec.org/resource_types.html
   
  it 'mysql service should be enabled and running' do
- 	expect(service(mysql)).to be_enabled
- 	expect(service(mysql)).to be_running
+ 	expect(service('mysql')).to be_enabled
+ 	expect(service('mysql')).to be_running
  end
 
  it 'mysql is listening on port 3306' do
