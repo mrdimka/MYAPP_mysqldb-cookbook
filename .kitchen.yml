@@ -1,0 +1,17 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_zero
+
+platforms:
+  - name: ubuntu-12.04
+    driver_config:
+      box: box-dimka/ubuntu1204-i386
+
+suites:
+  - name: default
+    run_list:
+      - recipe[MyApp_mysqldb::default]
+    attributes:
