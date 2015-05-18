@@ -21,4 +21,3 @@ mysql_database 'MyAppDB' do
   connection mysql_connection_info
   action :create
 end
-
