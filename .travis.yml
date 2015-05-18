@@ -8,4 +8,4 @@ before_script:
   - bundle exec berks install
 script:
   - bundle exec foodcritic .
-  - bundle exec rubocop
+  - bundle exec rubocop .
