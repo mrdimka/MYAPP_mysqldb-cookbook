@@ -7,9 +7,9 @@
 # All rights reserved - Do Not Redistribute
 #
 
-include_recipe "mysql::client"
-include_recipe "mysql::server"
-include_recipe "database::mysql"
+include_recipe 'mysql::client'
+include_recipe 'mysql::server'
+include_recipe 'database::mysql'
 
 mysql_connection_info = {
     :host => 'localhost',
@@ -17,7 +17,7 @@ mysql_connection_info = {
     :password => node['mysql']['server_root_password']
 }
 
-mysql_database "MyAppDB" do
+mysql_database 'MyAppDB' do
   connection mysql_connection_info
   action :create
 end

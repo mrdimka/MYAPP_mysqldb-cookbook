@@ -12,7 +12,7 @@ describe 'MyApp_mysqldb::default' do
 
  it 'mysql is listening on port 3306' do
     expect(port(3306)).to be_listening
-  end
+ end
 
 
 end
