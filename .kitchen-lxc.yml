@@ -1,0 +1,20 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_zero
+
+platforms:
+  - name: ubuntu-12.04
+    run_list:
+      - recipe[apt]
+    driver:
+      box: fgrehm/precise64-lxc
+      provider: lxc
+
+suites:
+  - name: default
+    run_list:
+      - recipe[MyApp_mysqldb::default]
+    attributes:
