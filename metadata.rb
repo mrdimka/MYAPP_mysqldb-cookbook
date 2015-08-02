@@ -4,7 +4,7 @@ maintainer_email 'mr.dimka@gmail.com'
 license          'all_rights'
 description      'Installs/Configures MyApp_mysqldb'
 long_description 'Installs/Configures MyApp_mysqldb'
-version          '0.1.0'
+version IO.read(File.join(File.dirname(__FILE__), 'VERSION')) rescue '0.1.0'
 
 depends 'mysql', '~> 5.6'
 depends 'database', '~> 2.3'
