@@ -48,3 +48,7 @@ Style/SingleSpaceBeforeFirstArg:
 # Cop supports --auto-correct.
 Style/TrailingWhitespace:
   Enabled: false
+
+Style/RescueModifier:
+  Enabled: false
+
